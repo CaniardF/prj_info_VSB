@@ -1,3 +1,4 @@
+```plantUML
 @startuml obc_sos_dependencies
 
 skinparam DefaultTextAlignment center
@@ -38,15 +39,16 @@ package "OBC side" {
     OBC_TTC_integ --> OBC_Satlog_filter_design
 }
 
-package "SOS Side" {
+package "SOS side" {
+    [XLinkS control] as SOS_xlinks_control
     [Satlog extraction] as SOS_satlog_extraction
     [XDL unpacking] as SOS_XDL_unpacking
-    [XLinkS control]<<SOS>> as SOS_xlinks_control
 }
 
 OBC_Satlog_filter_design --> SOS_XDL_unpacking
 OBC_XDL_integ --> SOS_XDL_unpacking
-OBC_XDL_integ --> SOS_xlinks_control
 OBC_Satlog_filter_impl --> SOS_satlog_extraction
 
 @enduml
+
+```
