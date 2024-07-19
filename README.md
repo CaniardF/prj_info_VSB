@@ -39,7 +39,7 @@ OBC_TTC_integ --> OBC_XDL_over_TTC
 OBC_XDL_integ --> OBC_XDL_over_TTC
 OBC_TTC_integ --> OBC_Satlog_filter_design
 
-[XLinkS control]<<SOS>> as SOS_xlinks_control
+[XLinkS control] as SOS_xlinks_control
 [Satlog extraction] as SOS_satlog_extraction
 [XDL unpacking] as SOS_XDL_unpacking
 
